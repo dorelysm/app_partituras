@@ -2,18 +2,26 @@ import 'package:flutter/material.dart';
 
 import 'package:repertorio/Models/model_canciones.dart';
 
-List<Widget> listaCanciones(List<ModelCanciones> data){
-  List<Widget> canciones = [];
+class ListaCanciones extends StatelessWidget {
+  final List<ModelCanciones> canciones;
 
-  for (var canciones in data){
-    canciones.add(Card(
-      child: Column(
-        children: [
-          Text(canciones.titulo),
-          Text(canciones.descripcion),
-        ],
-      ),
-    ));
+  const ListaCanciones({Key? key, required this.canciones}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final _screensize = MediaQuery.of(context).size;
+
+    return ListView.builder(
+      itemCount: canciones.length,
+      itemBuilder: (BuildContext context, int index) {
+        return Card(
+          child: ListTile(
+            title: Text(canciones[index].titulo),
+            contentPadding: const EdgeInsets.all(20),
+            onLongPress: () {},
+          ),
+        );
+      },
+    );
   }
-  return canciones;
 }

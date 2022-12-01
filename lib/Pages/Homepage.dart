@@ -21,22 +21,33 @@ class _HomepageState extends State<Homepage> {
       ),
       body: ListView(
         children: <Widget>[
-          Image.asset('logo.png'),
-          ElevatedButton(
-            onPressed: () {
-              _verRepertorio(context);
-            },
-            child: const Text('Repertorio')),
-          ElevatedButton(
-            onPressed: () {
-              _verSobreNosotros(context);
-            },
-            child: const Text('Sobre nosotros')),
-          ElevatedButton(
-            onPressed: () {
-              _verRedes(context);
-            },
-            child: const Text('Redes sociales')),
+          Container(child: Image.asset('logo.png'),
+            height: 300,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+            child: ElevatedButton(
+              onPressed: () {
+                _verRepertorio(context);
+              },
+              child: const Text('Repertorio')),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+            child: ElevatedButton(
+              onPressed: () {
+                _verSobreNosotros(context);
+              },
+              child: const Text('Sobre nosotros')),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+            child: ElevatedButton(
+              onPressed: () {
+                _verRedes(context);
+              },
+              child: const Text('Redes sociales')),
+          ),
         ],
       ),
     );
