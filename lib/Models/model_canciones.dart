@@ -1,3 +1,5 @@
+import 'package:flutter/src/material/card.dart';
+
 class Canciones {
   List<ModelCanciones> items = [];
 
@@ -31,4 +33,6 @@ class ModelCanciones {
     descripcion = json['descripcion'];
     pdf = json['pdf'];
   }
+
+  void add(Card card) {}
 }
