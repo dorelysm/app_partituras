@@ -60,6 +60,6 @@ class _HomepageState extends State<Homepage> {
     Navigator.of(context).pushNamed('/redes');
   }
   void _verRepertorio(BuildContext context){
-    Navigator.of(context).pushNamed('/repertorio');
+    Navigator.of(context).pushNamed('/redes');
   }
 }
