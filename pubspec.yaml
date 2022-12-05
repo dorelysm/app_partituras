@@ -38,6 +38,8 @@ dependencies:
   pdf_viewer_flutter: ^1.0.2
   path_provider: ^1.2.0
   font_awesome_flutter: ^10.2.1
+  advance_pdf_viewer: ^1.2.2
+  pdf_flutter: ^1.1.4
 
 dev_dependencies:
   flutter_test:
